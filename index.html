@@ -7,7 +7,7 @@
 <body>
 <div class="game">NUMBER GAME</div>
 <div id="val"></div>
-<button type="button" id="click">PLAY</button>
+<button type="button" id="click">INTRESTING</button>
 <div id="play"></div>
  <script>
    let gameSite=document.getElementById("val");      
@@ -16,42 +16,154 @@
    let gmPly=document.createElement("div");
    let ply1=document.createElement("div");
    let ply2=document.createElement("div");
+   let ply3=document.createElement("div");
+   let ply4=document.createElement("div");
+   let ply5=document.createElement("div");
+   let ply6=document.createElement("div");
+   let ply7=document.createElement("div");
+   let ply8=document.createElement("div");
+   let ply9=document.createElement("div");
+   let ply10=document.createElement("div");
    let oneTag=document.createElement("span");
-   let twoTag=document.createElement("span"); 
+   let twoTag=document.createElement("span");
+   let threeTag=document.createElement("span");
+   let fourTag=document.createElement("span");
+   let fiveTag=document.createElement("span");
+   let sixTag=document.createElement("span");
+   let sevenTag=document.createElement("span");
+   let eightTag=document.createElement("span");
+   let nineTag=document.createElement("span"); 
+   let tenTag=document.createElement("span");
         gmPly.setAttribute("class","flex");
         ply1.setAttribute("class","p1");
-        ply2.setAttribute("class","p2");
+        ply2.setAttribute("class","p1");
+        ply3.setAttribute("class","p1");
+        ply4.setAttribute("class","p1");
+        ply5.setAttribute("class","p1");
+        ply6.setAttribute("class","p1");
+        ply7.setAttribute("class","p1");
+        ply8.setAttribute("class","p1");
+        ply9.setAttribute("class","p1");
+        ply10.setAttribute("class","p1");
         oneTag.setAttribute("class","oneval");
         twoTag.setAttribute("class","twoval");
+        threeTag.setAttribute("class","oneval");
+        fourTag.setAttribute("class","twoval");
+        fiveTag.setAttribute("class","oneval");
+        sixTag.setAttribute("class","twoval");
+        sevenTag.setAttribute("class","oneval");
+        eightTag.setAttribute("class","twoval");
+        nineTag.setAttribute("class","oneval");
+        tenTag.setAttribute("class","twoval");
         oneTag.setAttribute("style","display:none");
         twoTag.setAttribute("style","display:none");
+        threeTag.setAttribute("style","display:none");
+        fourTag.setAttribute("style","display:none");
+        fiveTag.setAttribute("style","display:none");
+        sixTag.setAttribute("style","display:none");
+        sevenTag.setAttribute("style","display:none");
+        eightTag.setAttribute("style","display:none");
+        nineTag.setAttribute("style","display:none");
+        tenTag.setAttribute("style","display:none");
         gameSite.setAttribute("class","value");
         clickFun.setAttribute("class","btn");
                
         oneTag.innerText="1";  
         twoTag.innerText="2";
+        threeTag.innerText="3";  
+        fourTag.innerText="4";
+        fiveTag.innerText="5";  
+        sixTag.innerText="6";
+        sevenTag.innerText="7";  
+        eightTag.innerText="8";
+        nineTag.innerText="9";  
+        tenTag.innerText="10";
          ply1.append(oneTag);
          ply2.append(twoTag);
-         gmPly.append(ply1,ply2);
+         ply3.append(threeTag);
+         ply4.append(fourTag);
+         ply5.append(fiveTag);
+         ply6.append(sixTag);
+         ply7.append(sevenTag);
+         ply8.append(eightTag);
+         ply9.append(nineTag);
+         ply10.append(tenTag);
+         gmPly.append(ply1,ply2,ply3,ply4,ply5,ply6,ply7,ply8,ply9,ply10);
         plyFun.appendChild(gmPly); 
        clickFun.addEventListener("click",function(){
-               let number=Math.floor(Math.random()*2+1);
+               let number=Math.floor(Math.random()*10+1);
 
                        gameSite.innerText=number;  
           });
        ply1.addEventListener("click",function(){
            if(oneTag.innerText==gameSite.innerText){
-          alert("congrat you are clicked perfect match"); 
+          alert("congrats you are clicked perfect match"); 
         oneTag.setAttribute("style","display:block");
-        twoTag.setAttribute("style","display:none");
-}
+}       else
+          alert("wrong");
 });
        ply2.addEventListener("click",function(){
         if(twoTag.innerText==gameSite.innerText){
-          alert("congrat you are clicked perfect match");
-          oneTag.setAttribute("style","display:none");
+          alert("congrats you are clicked perfect match");
           twoTag.setAttribute("style","display:block");
-}
+}       else
+          alert("wrong");
+});
+       ply3.addEventListener("click",function(){
+        if(threeTag.innerText==gameSite.innerText){
+          alert("congrats you are clicked perfect match");
+          threeTag.setAttribute("style","display:block");
+}       else
+          alert("wrong");
+});
+       ply4.addEventListener("click",function(){
+        if(fourTag.innerText==gameSite.innerText){
+          alert("congrats you are clicked perfect match");
+          fourTag.setAttribute("style","display:block");
+}       else
+          alert("wrong");
+});
+       ply5.addEventListener("click",function(){
+        if(fiveTag.innerText==gameSite.innerText){
+          alert("congrats you are clicked perfect match");
+          fiveTag.setAttribute("style","display:block");
+}       else
+          alert("wrong");
+});
+       ply6.addEventListener("click",function(){
+        if(sixTag.innerText==gameSite.innerText){
+          alert("congrats you are clicked perfect match");
+          sixTag.setAttribute("style","display:block");
+}       else
+          alert("wrong");
+});
+       ply7.addEventListener("click",function(){
+        if(sevenTag.innerText==gameSite.innerText){
+          alert("congrats you are clicked perfect match");
+          sevenTag.setAttribute("style","display:block");
+}       else
+          alert("wrong");
+});
+       ply8.addEventListener("click",function(){
+        if(eightTag.innerText==gameSite.innerText){
+          alert("congrats you are clicked perfect match");
+          eightTag.setAttribute("style","display:block");
+}       else
+          alert("wrong");
+});
+       ply9.addEventListener("click",function(){
+        if(nineTag.innerText==gameSite.innerText){
+          alert("congrats you are clicked perfect match");
+          nineTag.setAttribute("style","display:block");
+}       else
+          alert("wrong");
+});
+       ply10.addEventListener("click",function(){
+        if(tenTag.innerText==gameSite.innerText){
+          alert("congrats you are clicked perfect match");
+          tenTag.setAttribute("style","display:block");
+}       else
+          alert("wrong");
 }); 
  </script>
 </body>
