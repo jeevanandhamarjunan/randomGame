@@ -1,0 +1,91 @@
+.js-cpy{}
+html{
+     font-family: 'Merienda', cursive;
+     font-family: arial	, sans-serif;
+}
+.container {
+        width:100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.row {
+	display:flex;
+	flex-wrap:wrap;
+	margin: 0 -15px;
+}
+.p-0{
+padding:0 !important;
+}
+.m-0{
+ margin:0;
+}
+.d-flex{
+  display:flex;
+}
+.d-block{
+  display:block !important;
+}
+.text-align-center{
+ text-align:center;
+}
+.text-align-right{
+  text-align:right;
+}
+.align-items-center{
+   align-items:center;
+}
+.justify-content-spacebetween{
+   justify-content:space-between;
+}
+.text-decoration-none{
+ text-decoration:none !important;
+}
+.ps-0{
+ padding-left:0 !important;
+}
+
+.game{
+  background-color:red;
+  font-size:30px;
+  font-weight:600;
+  text-align:center;
+}
+.value{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: 120px;
+}
+.btn{
+    background-color: red;
+    border: solid 2px red;
+    margin-top: 30px;
+}
+.oneval{
+    background-color: aliceblue;
+    width: 300px;
+    text-align: center;
+    padding: 50px;
+    font-size: 60px;
+}
+.twoval{
+    background-color: aliceblue;
+    width: 300px;
+    text-align: center;
+    padding: 50px;
+    font-size: 60px;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+.p1{
+    background-color: aqua;
+    width: 396px;
+    height: 162px;
+}
+.p2{
+    background-color: aqua;
+    width: 396px;
+    height: 162px;
+}

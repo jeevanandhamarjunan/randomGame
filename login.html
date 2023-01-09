@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Game</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="game">NUMBER GAME</div>
+<div id="val"></div>
+<button type="button" id="click">INTRESTING</button>
+<div id="play"></div>
+ <script>
+   let gameSite=document.getElementById("val");      
+   let clickFun=document.getElementById("click");    
+   let plyFun=document.getElementById("play"); 
+   let gmPly=document.createElement("div");
+   let ply1=document.createElement("div");
+   let ply2=document.createElement("div");
+   let oneTag=document.createElement("span");
+   let twoTag=document.createElement("span"); 
+        gmPly.setAttribute("class","flex");
+        ply1.setAttribute("class","p1");
+        ply2.setAttribute("class","p2");
+        oneTag.setAttribute("class","oneval");
+        twoTag.setAttribute("class","twoval");
+        oneTag.setAttribute("style","display:none");
+        twoTag.setAttribute("style","display:none");
+        gameSite.setAttribute("class","value");
+        clickFun.setAttribute("class","btn");
+               
+        oneTag.innerText="1";  
+        twoTag.innerText="2";
+         ply1.append(oneTag);
+         ply2.append(twoTag);
+         gmPly.append(ply1,ply2);
+        plyFun.appendChild(gmPly); 
+       clickFun.addEventListener("click",function(){
+               let number=Math.floor(Math.random()*2+1);
+
+                       gameSite.innerText=number;  
+          });
+       ply1.addEventListener("click",function(){
+           if(oneTag.innerText==gameSite.innerText){
+          alert("congrat you are clicked perfect match"); 
+        oneTag.setAttribute("style","display:block");
+        twoTag.setAttribute("style","display:none");
+}
+});
+       ply2.addEventListener("click",function(){
+        if(twoTag.innerText==gameSite.innerText){
+          alert("congrat you are clicked perfect match");
+          oneTag.setAttribute("style","display:none");
+          twoTag.setAttribute("style","display:block");
+}
+}); 
+ </script>
+</body>
+</html>
