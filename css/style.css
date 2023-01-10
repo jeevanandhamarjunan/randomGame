@@ -78,14 +78,17 @@ padding:0 !important;
 .flex{
     display: flex;
     justify-content: space-around;
+    flex-wrap:wrap;
 }
 .p1{
     background-color: aqua;
     width: 396px;
     height: 162px;
+    margin:10px;
 }
 .p2{
     background-color: aqua;
     width: 396px;
     height: 162px;
+    margin:10px;
 }
