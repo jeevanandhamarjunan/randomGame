@@ -13,35 +13,23 @@ html{
 	flex-wrap:wrap;
 	margin: 0 -15px;
 }
-.p-0{
-padding:0 !important;
+.justify-content-around{
+  justify-content: space-around;
 }
-.m-0{
- margin:0;
+.js-cpy{}
+html{
+     font-family: 'Merienda', cursive;
+     font-family: arial	, sans-serif;
 }
-.d-flex{
-  display:flex;
+.container {
+        width:100%;
+	margin: 0 auto;
+	padding: 0 15px;
 }
-.d-block{
-  display:block !important;
-}
-.text-align-center{
- text-align:center;
-}
-.text-align-right{
-  text-align:right;
-}
-.align-items-center{
-   align-items:center;
-}
-.justify-content-spacebetween{
-   justify-content:space-between;
-}
-.text-decoration-none{
- text-decoration:none !important;
-}
-.ps-0{
- padding-left:0 !important;
+.row {
+	display:flex;
+	flex-wrap:wrap;
+	margin: 0 -15px;
 }
 
 .game{
@@ -50,45 +38,23 @@ padding:0 !important;
   font-weight:600;
   text-align:center;
 }
-.value{
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    font-size: 120px;
-}
-.btn{
+.gameDesign{
+     font-size: 40px;
     background-color: red;
-    border: solid 2px red;
-    margin-top: 30px;
-}
-.oneval{
-    background-color: aliceblue;
-    width: 300px;
-    text-align: center;
-    padding: 50px;
-    font-size: 60px;
-}
-.twoval{
-    background-color: aliceblue;
-    width: 300px;
-    text-align: center;
-    padding: 50px;
-    font-size: 60px;
+    padding: 30px 100px;
 }
 .flex{
     display: flex;
     justify-content: space-around;
     flex-wrap:wrap;
 }
-.p1{
-    background-color: aqua;
-    width: 396px;
-    height: 162px;
-    margin:10px;
+.frontspace{
+ position:absolute;
+ top:24px;
+ background-color:green;
+ width:100%;
+ height:105px;
 }
-.p2{
-    background-color: aqua;
-    width: 396px;
-    height: 162px;
-    margin:10px;
+.position-relative{
+  position:relative;
 }
